@@ -1,14 +1,22 @@
 import React from "react";
 import { render } from "react-dom";
-import Pet from "./Pet";
 import SearchParams from "./SearchParams";
+import { Link, Router } from "@reach/router";
+import Details from "./Details";
 
 const App = () => {
   return (
-    <div>
-      <h1 id="something-important">Adopt Me!</h1>
-      <SearchParams></SearchParams>
-    </div>
+    <React.StrictMode>
+      <div>
+        <header>
+          <Link to="/">Adopt Me!</Link>
+        </header>
+        <Router>
+          <SearchParams path="/"></SearchParams>
+          <Details path="/details/:id"></Details>
+        </Router>
+      </div>
+    </React.StrictMode>
   );
 };
 
