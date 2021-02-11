@@ -1,0 +1,50 @@
+{
+  "name": "complete-intro-to-react-v5",
+  "version": "1.0.0",
+  "description": "the Complete Intro to React, v5",
+  "main": "src/App.js",
+  "dependencies": {
+    "@frontendmasters/pet": "^1.0.3",
+    "@reach/router": "^1.2.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@types/reach__router": "^1.2.3",
+    "cross-env": "^5.2.0",
+    "@types/react": "^16.8.7",
+    "@types/react-dom": "^16.8.2",
+    "parcel-bundler": "^1.12.1",
+    "prettier": "^1.16.1",
+    "tslint": "^5.13.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.4.4"
+  },
+  "scripts": {
+    "clear-build-cache": "rm -rf .cache/ dist/",
+    "dev": "parcel src/index.html",
+    "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "tslint --project .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc --noEmit"
+  },
+  "author": "Brian Holt <btholt+complete-intro-to-react@gmail.com>",
+  "license": "Apache-2.0",
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 ChromeAndroid versions",
+    "last 2 Firefox versions",
+    "last 2 FirefoxAndroid versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Edge versions",
+    "last 2 Opera versions",
+    "last 2 OperaMobile versions"
+  ]
+}
